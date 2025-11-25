@@ -1,0 +1,97 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+display: flex;
+justify-self: center;
+align-items: center;
+height: 100vh;
+background-color: rgb(0, 0, 0);
+}
+.all{
+display: flex;
+justify-content:center;
+gap: 50px;
+align-items: center;
+
+}
+h2{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.oneimg{
+width: 300px;
+height: 300px;
+border:white 2px solid;
+border-radius:20px;
+object-fit: cover;
+color: white;
+}
+
+.towimg{
+width: 300px;
+height: 300px;
+border:rgb(70, 51, 2) 2px solid;
+border-radius:20px;
+object-fit: cover;
+color:rgb(70, 51, 2);
+}
+.threeimg{
+width: 300px;
+height: 300px;
+border:rgb(197, 113, 2) 2px solid;
+border-radius:20px;
+object-fit: cover;
+color: rgb(197, 113, 2);
+}
+.o{color: beige;}
+.t{color: rgb(66, 51, 0);}
+.h{color: rgb(184, 136, 3);}
+.onep{color: beige;
+opacity:0;}
+
+.towp{color:rgb(66, 51, 0);
+opacity:0;
+}
+.threep{color: rgb(184, 136, 3);
+opacity:0;
+}
+.oneimg:hover{
+transform: scale(1.2);
+transition: all 1.0s ease;
+opacity:1;
+
+}
+.towimg:hover{
+transform: scale(1.2);
+transition: all 1.0s ease;
+}
+.threeimg:hover{
+transform: scale(1.2);
+transition: all 1.0s ease;
+}
+a{
+text-decoration: none;
+}
+@media (max-width: 900px){
+body{
+flex-direction: column;
+height: auto;
+gap: 20px;
+}
+.all{
+flex-direction: column;
+}
+}
+@media (max-width: 400px){
+.oneimg,.towimg,.threeimg{
+width: 250px;
+height: 250px;
+}
+}
+
+
+
